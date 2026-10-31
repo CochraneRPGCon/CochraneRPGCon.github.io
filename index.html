@@ -30,6 +30,22 @@
   .panel { margin-top: 1.5rem; }
   .details { margin-top: 1.5rem; }
   a { color: #145da0; }
+    /* Container layout using Flexbox */
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px; /* Spacing between images */
+      max-width: 800px;
+    }
+
+    /* Fixed size for each image */
+    .image-grid img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover; /* Crops image nicely to fit the dimensions */
+      border-radius: 8px;  /* Optional: rounds corners */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
 </style>
 </head>
 <body>
@@ -77,6 +93,12 @@
     <a href="https://www.facebook.com/groups/276131066918134/">Join the Cochrane gaming community on Facebook</a><br>
     <a href="https://discord.gg/WVkKz9Sh9">Join the Cochrane gaming community on Discord</a></p>
   </section>
+  <div class="image-grid">
+    <img src="/20261025_101757.jpg" alt="Volunteers">
+    <img src="/IMG_0948.jpg" alt="Reception Desk">
+    <img src="/IMG_0953.jpg" alt="Drop-in Drop-out D&D">
+    <img src="/IMG_0949.jpg" alt="D&D: Mimic Mansion">
+  </div>
 </main>
 </body>
 </html>
